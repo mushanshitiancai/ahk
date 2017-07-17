@@ -1,11 +1,19 @@
 ; Astash的快捷操作
 ; 2017年7月17日 支持一键导出图片
 
+setworkingdir,%A_scriptdir% 
+#Include %A_scriptdir%\IME.ahk
+
 outputPath:="D:\nd\astash输出"
 title:="Astah"
 IfWinExist %title%
 {
 	WinActivate
+	
+	if(IME_GET()){
+		IME_SET(0)
+	}
+	
 	Click 245,40
 	Click 335,65
 	Click 600,85
