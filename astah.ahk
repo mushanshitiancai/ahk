@@ -26,5 +26,6 @@ IfWinExist %title%
 		Click 380,480
 		Send %outputPath%
 		Send {Enter}
+		Run, explore %outputPath%
 	}
 }
