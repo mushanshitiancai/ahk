@@ -9,6 +9,7 @@ title:="Astah"
 IfWinExist %title%
 {
 	WinActivate
+	WinMaximize
 	
 	if(IME_GET()){
 		IME_SET(0)
