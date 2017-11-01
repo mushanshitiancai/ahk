@@ -4,7 +4,7 @@
 setworkingdir,%A_scriptdir% 
 #Include %A_scriptdir%\IME.ahk
 
-outputPath:="D:\nd\astashÊä³ö"
+outputPath:="D:\astashÊä³ö"
 title:="Astah"
 IfWinExist %title%
 {

@@ -43,7 +43,8 @@ F1:: WinActivate ahk_exe chrome.exe
 ^F1:: WinActivate ahk_exe Totalcmd64.exe
 F12:: WinActivate ahk_exe idea64.exe
 
-^Tab::!Tab
-^`::!`
+; switch window (need  Easy Window Switcher)
+LControl & Tab::AltTab
+LControl & `:: Send !``
 
 ;ahk_class VMUIFrame
