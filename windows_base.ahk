@@ -19,8 +19,8 @@ WheelDown::Send {WheelUp}
 
 ^Left::Send {Home}
 ^Right::Send {End}
-!Left::Send ^{Left}
-!Right::Send ^{Right}
+;!Left::Send ^{Left}
+;!Right::Send ^{Right}
 
 ^Up::Send {PGUP}
 ^Down::Send {PGDN}
@@ -36,15 +36,16 @@ WheelDown::Send {WheelUp}
 ;^Space:: #Space
 
 ; switcheroo
-LCtrl & RCtrl:: Send !d
+;LCtrl & RCtrl:: Send !d
 
 ; quick switch
-F1:: WinActivate ahk_exe chrome.exe
+F1:: WinActivate ahk_exe firefox.exe
 ^F1:: WinActivate ahk_exe Totalcmd64.exe
 F12:: WinActivate ahk_exe idea64.exe
 
 ; switch window (need  Easy Window Switcher)
-LControl & Tab::AltTab
-LControl & `:: Send !``
+;LControl & Tab::AltTab
+;LControl & `:: Send !``
+LControl & `:: AltTab
 
 ;ahk_class VMUIFrame
